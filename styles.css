@@ -1,0 +1,131 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 800px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 30px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.navbar ul li a:hover {
+    color: blue;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 1px;
+    width: 0;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.2s ease;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.photo img {
+    width: 170px;
+    height: auto;
+    border-radius: 20%;
+    border: 5px solid lightblue; 
+    padding: 5px;
+    transition: 0.3s; 
+    margin-left: 150px;
+}
+
+.photo img:hover {
+    background-color: lightskyblue; 
+    color: white;
+}
+
+.home {
+    font-size: 45px;
+    color: lightblue;
+    background-image: url("images/profolio bg.avif");
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.skills {
+    background-image: url("images/profolio bg.avif");
+    background-color: #333;
+    color: lightblue;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.education {
+    background-image: url("images/profolio bg.avif");
+    background-color: #333;
+    color: lightblue;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.projects {
+    background-image: url("images/profolio bg.avif");
+    background-color: #333;
+    color: lightblue;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 30px;
+}
+.contact{
+    background-image: url("images/profolio bg.avif");
+    background-color: #333;
+    color: lightblue;
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* General button styles */
+button {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;  
+    color: lightblue;        
+    padding: 10px 20px;
+    border: none;
+    border-radius: 115px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for buttons */
+.links a button:hover {
+    background-color: lightskyblue; 
+    color: white;                
+}
+
+
+
+
+
+
+
